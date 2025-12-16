@@ -56,6 +56,7 @@ class HeaderSection extends HookConsumerWidget {
         // Importa la mappa e le chiavi
         // Mappa le SkillCard usando i dati
         Row(
+          mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SkillCard(

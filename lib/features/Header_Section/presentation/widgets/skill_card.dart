@@ -15,14 +15,26 @@ class SkillCard extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final colorScheme = Theme.of(context).colorScheme;
     return Container(
-      height: 280,
-      width: 280,
-      margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+        gradient: LinearGradient(
+          
+          colors: [
+            colorScheme.surfaceContainer,
+            colorScheme.surfaceContainerHighest,
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      height: 200,
+      width: 200,
+      margin: const EdgeInsets.all(16),
       child: Card(
-        color: Theme.of(context).colorScheme.surfaceContainerHigh,
-        elevation: 4,
+        color: Colors.transparent,
+        elevation: 2,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -38,13 +50,6 @@ class SkillCard extends HookConsumerWidget {
               ),
             ),
             const SizedBox(height: 8),
-            Text(
-              description,
-              style: const TextStyle(color: Colors.white70, fontSize: 13),
-              textAlign: TextAlign.center,
-              maxLines: 4,
-              overflow: TextOverflow.ellipsis,
-            ),
           ],
         ),
       ),
