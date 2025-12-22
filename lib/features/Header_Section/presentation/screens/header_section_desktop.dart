@@ -1,18 +1,15 @@
-// Header Section
 import 'package:flutter/material.dart';
-
-import 'package:hooks_riverpod/hooks_riverpod.dart';
-
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:rapsody_portfolio/core/utils/itsrings.dart';
+import 'package:rapsody_portfolio/features/Header_Section/data/skill_card_map.dart';
 import 'package:rapsody_portfolio/features/Header_Section/presentation/widgets/featuredAppHighlight.dart';
 import 'package:rapsody_portfolio/features/Header_Section/presentation/widgets/skill_card.dart';
-import 'package:rapsody_portfolio/features/Header_Section/data/skill_card_map.dart';
 
-class HeaderSection extends HookConsumerWidget {
-  const HeaderSection({super.key});
+class HeaderSectionDesktop extends HookWidget{
+  const HeaderSectionDesktop({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Column(
       children: [
         Text(
