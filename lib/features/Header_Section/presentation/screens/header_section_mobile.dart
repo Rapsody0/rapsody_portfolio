@@ -19,26 +19,31 @@ class HeaderSectionMobile extends HookWidget {
     final middleFontSize = width < 400 ? 16.0 : 18.0;
 
     // SkillCard list
+    final skillCardTextSize = width < 400 ? 15.0 : 16.0;
     final skillCards = [
       SkillCard(
         title: 'Flutter',
         description: statCardDescriptions[SkillCardKeys.flutter]!,
-        icon: Icons.flutter_dash,
+        icon: Icons.code,
+        textSize: skillCardTextSize,
       ),
       SkillCard(
         title: 'Riverpod',
         description: statCardDescriptions[SkillCardKeys.riverpod]!,
         icon: Icons.bolt,
+        textSize: skillCardTextSize,
       ),
       SkillCard(
         title: 'AI',
         description: statCardDescriptions[SkillCardKeys.ai]!,
         icon: Icons.smart_toy,
+        textSize: skillCardTextSize,
       ),
       SkillCard(
         title: 'UI/UX',
         description: statCardDescriptions[SkillCardKeys.uiux]!,
         icon: Icons.design_services,
+        textSize: skillCardTextSize,
       ),
     ];
 

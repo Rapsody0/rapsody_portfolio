@@ -5,17 +5,20 @@ class SkillCard extends HookConsumerWidget {
   final String title;
   final String description;
   final IconData icon;
+  final double? textSize;
 
   const SkillCard({
     super.key,
     required this.title,
     required this.description,
     required this.icon,
+    this.textSize,
   });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final colorScheme = Theme.of(context).colorScheme;
+    final double effectiveTextSize = textSize ?? 20.0;
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
@@ -43,9 +46,9 @@ class SkillCard extends HookConsumerWidget {
             const SizedBox(height: 12),
             Text(
               title,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: effectiveTextSize,
                 fontWeight: FontWeight.bold,
               ),
             ),

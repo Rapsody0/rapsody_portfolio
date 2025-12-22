@@ -59,7 +59,7 @@ class HeaderSectionDesktop extends HookWidget{
             SkillCard(
               title: 'Flutter',
               description: statCardDescriptions[SkillCardKeys.flutter]!,
-              icon: Icons.flutter_dash,
+              icon: Icons.code,
             ),
             SkillCard(
               title: 'Riverpod',
