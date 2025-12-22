@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:rapsody_portfolio/features/Expertise_Section/presentation/widgets/skill_bar.dart';
 
 class ExpertiseSection extends StatelessWidget {
-  const ExpertiseSection();
+  const ExpertiseSection({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:rapsody_portfolio/core/utils/itsrings.dart';
 import 'package:rapsody_portfolio/features/Header_Section/data/skill_card_map.dart';
-import 'package:rapsody_portfolio/features/Header_Section/presentation/widgets/featuredAppHighlight.dart';
+import 'package:rapsody_portfolio/features/Header_Section/presentation/widgets/featured_apphighlight.dart';
 import 'package:rapsody_portfolio/features/Header_Section/presentation/widgets/skill_card.dart';
 
 class HeaderSectionMobile extends HookWidget {
