@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class Tag extends StatelessWidget {
   final String text;
-  const Tag({required this.text});
+  const Tag({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
